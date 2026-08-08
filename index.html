@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#153d63" />
+    <meta name="description" content="Currículo y planeador semanal de Música del Colegio San Tarsicio, de Prejardín a Quinto." />
+    <meta property="og:title" content="Currículo Vivo de Música · Colegio San Tarsicio" />
+    <meta property="og:description" content="Planeador semanal y currículo musical de Prejardín a Quinto." />
+    <title>Currículo Vivo de Música · San Tarsicio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">CST</span>
+        <span>
+          <strong>Currículo Vivo de Música</strong>
+          <small>Colegio San Tarsicio</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#semana" data-nav="semana">Esta semana</a>
+        <a href="#curriculo" data-nav="curriculo">Por grado</a>
+        <a href="#steam" data-nav="steam">STEAM</a>
+        <a href="#herramientas" data-nav="herramientas">Herramientas</a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <div id="app" aria-live="polite"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>Formar antes que instruir.</strong> Voz, juego, creación, escucha y música con contexto colombiano.</p>
+      <a href="#herramientas">Documentos y recursos</a>
+    </footer>
+
+    <dialog id="lesson-dialog" class="lesson-dialog" aria-labelledby="lesson-dialog-title">
+      <div class="dialog-toolbar">
+        <span class="eyebrow">Planeación de clase</span>
+        <button class="icon-button" type="button" data-close-dialog aria-label="Cerrar planeación">×</button>
+      </div>
+      <div id="lesson-dialog-content"></div>
+    </dialog>
+
+    <script src="curriculum-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
